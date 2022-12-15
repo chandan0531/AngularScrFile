@@ -1,0 +1,27 @@
+<p>Save students</p>
+
+<form (ngSubmit) = "onSubmit()">
+
+
+<div class="form-group">
+    <label>stdId</label>
+    <input type="text" class="form-control" id="stdId" [(ngModel)] = "student.stdId" name="stdId" />
+</div>
+
+<div class="form-group">
+    <label>firstName</label>
+    <input type="text" class="form-control" id="firstName" [(ngModel)] = "student.firstName" name="firstName" />
+</div>
+
+<div class="form-group">
+    <label>lastName</label>
+    <input type="text" class="form-control" id="lastName" [(ngModel)] = "student.lastName" name="lastName" />
+</div>
+
+<div class="form-group">
+    <label>emailId</label>
+    <input type="text" class="form-control" id="emailId" [(ngModel)] = "student.emailId" name="emailId" />
+</div>
+
+<button class="btn btn-success" type="submit"> Add</button>
+</form>
